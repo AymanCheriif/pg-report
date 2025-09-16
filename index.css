@@ -325,7 +325,7 @@ p {
 
 .partners-logos {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
   align-items: center;
   gap: 40px;
@@ -487,7 +487,7 @@ p {
 .steps-container {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 60px;
   max-width: 1656px;
   margin: 0 auto;
@@ -540,8 +540,7 @@ p {
 }
 
 /* Card positions to match Figma */
-/* Large screen exact layout (Figma coordinates) */
-@media (min-width: 1656px) {
+@media (min-width: 1280px) {
   .how-it-works .container {
     padding-left: 0;
     padding-right: 0;
@@ -550,6 +549,7 @@ p {
   .steps-container {
     max-width: 1656px;
     min-height: 1363px;
+    align-items: center;
   }
 
   .steps-path {
@@ -1137,6 +1137,20 @@ p {
 
   .features-image {
     background-image: none !important;
+  }
+}
+
+@media screen and (max-width: 1366px) and (min-width: 1281px) {
+  .step-2 {
+    right: 90px !important;
+  }
+
+  .step-3 {
+    left: 180px !important;
+  }
+
+  .step-4 {
+    right: 45px !important;
   }
 }
 
